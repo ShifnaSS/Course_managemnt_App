@@ -1,0 +1,8 @@
+.limiter{
+    border-radius: 5px;
+    padding: 2em;
+    position:relative;
+    top:10px;
+    background-color:rgba(28, 29, 27, 0.767);font-weight:bolder;
+    
+}

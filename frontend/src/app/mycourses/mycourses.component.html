@@ -1,0 +1,54 @@
+<div class="bgded overlay" style="background-image:url('../assets/images/Teo.jpeg');">
+
+    <section class="hoc container clear">
+        <main>
+                    <div class="col-lg-12 profilehome">
+                        <div class="row">
+                            <div class="limiter">
+                                <div class="container">
+                                    <div class="col-md-12">
+                                        <div class="table-wrap">
+                                            <table class="table responsive">
+                                                <thead class="thead-primary">
+                                                    <tr>
+                                                        <th>Course Name</th>
+                                                        <th>Description</th>
+                                                        <th>Duration</th>
+                                                        <th>Fees</th>
+                                                        <th>Seats available</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr *ngFor="let MyCourse of MyCourses">
+                                                        <td class="column1">
+                                                            {{MyCourse.coursename}}
+                                                        </td>
+                                                        <td class="column1">
+                                                            {{MyCourse.coursedecs}}
+                                                        </td>
+                                                        <td class="column1">
+                                                            {{MyCourse.duration}}
+                                                        </td>
+                                                        <td class="column1">
+                                                            {{MyCourse.fee}}
+                                                        </td>
+                                                        <td class="column1">
+                                                            {{MyCourse.seats}}
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <a routerLink="/professorhome"><button class="btn btn-primary">Back to Profile</button></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+            <!-- </section> -->
+        </main>
+        <!-- ################################################################################################ -->
+    </section>
+</div>
+

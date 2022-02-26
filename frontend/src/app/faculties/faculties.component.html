@@ -1,0 +1,20 @@
+<div class="bgded overlay" style="background-image:url('../assets/images/Teo.jpeg');">
+    <section id="testimonials" class="hoc container clear"> 
+  
+      <article style="background-color: rgba(20, 20, 20, 0.596);">
+        <h6 class="heading font-x2" style="color:azure">Our Fcaulties</h6>
+        <div class="responsive col-md-12 prof" *ngFor = 'let professor of professors'>
+            <div class="inner">
+            <h3 style="color: red;font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">{{professor.Name}}</h3>
+            <p>{{professor.qualification}}<span>&nbsp;in&nbsp;{{professor.stream}}</span></p>
+            <p>{{professor.jobrole}}<span>&nbsp;at&nbsp;{{professor.organisation}}</span></p>
+            
+            <p>{{professor.email_id}}</p>
+        </div>
+        <hr>
+        </div>
+      </article>
+   
+    </section>
+  </div>
+

@@ -1,0 +1,11 @@
+.prof{
+    width:80%;
+    background-color: rgba(32, 155, 118, 0.37);
+    padding:4em 8em;
+    align-items: center;
+    text-align: center;
+    border-radius: 10px;
+}
+.inner{
+    margin-left: 2em;
+}

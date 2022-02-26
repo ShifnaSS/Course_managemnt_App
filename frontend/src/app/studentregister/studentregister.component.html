@@ -1,0 +1,88 @@
+
+
+  <div class="bgded overlay" style="background-image:url('../assets/images/homeprofile.jpg');">
+    <section class="hoc container clear"> 
+      <!-- ################################################################################################ -->
+      <div class="sectiontitle">
+    
+        <h1 style="color: white;font-weight: bolder;font-family:Arial, Helvetica, sans-serif;font-size: x-large;"
+        ><span style="color: rgb(241, 236, 237);">Apply for a Course</span></h1>
+      </div>
+      <article id="points" class="group">
+                    <form [formGroup]="studentForm" class="agile_form"  (ngSubmit)="onSubmit()" #studentform="ngForm">
+                        <fieldset>
+                            <div class="form-group agileits_w3layouts_form ">
+                                <label>Name:</label>
+                                <div class="wthree_input">
+                                    <i class="fa fa-user" aria-hidden="true"></i>
+                                    <input id="Name" type="text" name="Name" class="form-control" formControlName='Name' placeholder="Enter Your Full Name"  [(ngModel)]='StudentData.name'/>
+                                </div>
+                            </div>
+                            <div class="form-group agileits_w3layouts_form ">
+                                <label>Email-Id</label>
+                                <div class="wthree_input">
+                                    <i class="fa fa-envelope" aria-hidden="true"></i>
+                                    <input id="Email" type="text" name="Email" class="form-control" formControlName='Email' placeholder="Email Id"  [(ngModel)]='StudentData.email'  />
+                                </div>
+                            </div>
+                            <div class="form-group agileits_w3layouts_form">
+                                <label>Phone Number</label>
+                                <div class="wthree_input">
+                                    <input id="phone" type="text" name="phone" class="form-control" formControlName='phone' placeholder="Phone Number"[(ngModel)]='StudentData.phone'/>
+                                </div>
+                            </div>
+                            <div class="form-group agileits_w3layouts_form ">
+                                <label>Highest Qualification</label>
+                                <div class="wthree_input">
+                                    <i class="fa fa-file-text" aria-hidden="true"></i>
+                                    <input id="quali" type="text" name="quali" class="form-control" formControlName='quali' placeholder="Enter Highest Qualification"/>
+                                </div>
+                            </div>
+                            <div class="form-group agileits_w3layouts_form ">
+                                <label>Specialization/Stream/Subject</label>
+                                <div class="wthree_input">
+                                    <i class="fa fa-file-text" aria-hidden="true"></i>
+                                    <input id="sub" type="text" name="sub" class="form-control" formControlName='sub' placeholder="Enter your specialization "/>
+                                </div>
+                            </div>
+                            <div class="form-group agileits_w3layouts_form ">
+                                <label>Marks in Percentage</label>
+                                <div class="wthree_input">
+                                    <i class="fa fa-file-text" aria-hidden="true"></i>
+                                    <input id="perc" type="text" name="perc" class="form-control" formControlName='perc' placeholder="Enter Marks in percentage" />
+                                </div>
+                            </div>
+                            <div class="form-group agileits_w3layouts_form ">
+                                <label>Year of Passout</label>
+                                <div class="wthree_input">
+                                    <i class="fa fa-file-text" aria-hidden="true"></i>
+                                    <input id="year" type="text" name="year" class="form-control" formControlName='year' placeholder="Enter Passout Year" />
+                                </div>
+                            </div>
+                            <div class="form-group agileits_w3layouts_form ">
+                                <label>Select Course</label>
+                                <div class="wthree_input">
+                                    <input type="text" id="course" name="course" class="form-control" formControlName='course' [(ngModel)]='Courses.coursename' >
+                                    <!-- <option value selected >Select a Course</option> -->
+                                </div>
+                            </div>
+                            <div class="form-group agileits_w3layouts_form .w3_agile_main_grids">
+                                <div class="wthree_input">
+                                    <i class="fa fa-file-text" aria-hidden="true"></i>
+                                    <input  type="checkbox" name="check" id="check" formControlName='check'/> <label style="color: rgb(92, 139, 20);">Agree Terms and Conditions</label>
+                                </div>
+                            </div>
+                        </fieldset>
+                        
+                       
+                        <p>
+                            <button id="SaveAccount" class="btn btn-primary agileinfo_primary submit" style="background-color: rgb(116, 175, 27);" [disabled]="studentform.form.invalid">Apply Now</button>
+                        </p>
+                    </form>
+                    
+      </article>
+      <!-- ################################################################################################ -->
+    </section>
+  </div>
+
+  <!-- <a class="imgover" href="#"><img src="images/demo/348x394.png" alt=""></a> -->

@@ -1,0 +1,37 @@
+
+<div class="bgded overlay" style="background-image:url('../assets/images/Teo.jpeg');" *ngIf = '!filtered_applications'>
+    <section id="testimonials" class="hoc container clear"> 
+  
+      <article style="background-color: rgb(217, 230, 235);">
+        <h6 class="heading font-x2">Notifications</h6>
+        <em>Click below to see the notifications</em>
+        <button style="padding:.5em 3em;border-radius:10px;background-color:rgb(52, 104, 1);color:blanchedalmond;font-size:20px;" (click)="show()">Click here</button>
+      </article>
+   
+    </section>
+  </div>
+
+  <div class="bgded overlay" style="background-image:url('../assets/images/Teo.jpeg');" *ngIf = 'filtered_applications'>
+    <section id="testimonials" class="hoc container clear"> 
+  
+      <article style="background-color: rgb(217, 230, 235);">
+  
+        
+          <div class="vcv-container">
+        
+            <div class="vce-message-box vce vce-message-box-style--success" *ngFor="let filtered_application of filtered_applications">
+              <div class="vce-message-box-inner  p-2">
+      
+                <span class="vce-message-box-text">
+                  <p>"{{filtered_application.Name}}&nbsp;&nbsp;&nbsp; application for&nbsp;&nbsp;{{filtered_application.course}}&nbsp;&nbsp;is approved"</p>
+                </span>
+                <hr><hr>
+              </div>
+            </div>
+            
+          </div>
+        
+      </article>
+   
+    </section>
+  </div>

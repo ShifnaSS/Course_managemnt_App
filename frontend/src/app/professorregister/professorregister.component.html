@@ -1,0 +1,127 @@
+
+
+  <div class="bgded overlay" style="background-image:url('../assets/images/homeprofile.jpg');">
+    <section class="hoc container clear"> 
+      <!-- ################################################################################################ -->
+      <div class="sectiontitle">
+    
+        <h1 style="color: white;font-weight: bolder;font-family:Arial, Helvetica, sans-serif;font-size: x-large;"
+        ><span style="color: rgb(241, 236, 237);">Register as a Professor</span></h1>
+      </div>
+      <article id="points" class="group">
+                    <form [formGroup]="professorForm" class="agile_form" #professorform='ngForm' >
+                        <fieldset>
+                            <div class="form-group agileits_w3layouts_form .w3_agile_main_grids">
+                                <label style="color: rgb(11, 87, 11);">Full Name</label>
+                                <div class="wthree_input">
+                                    <i class="fa fa-user" aria-hidden="true"></i>
+                                    <input type="text" id="Name" name="Name" class="form-control" placeholder="Enter Your Full Name" formControlName='Name' [(ngModel)]='userData.name'/>
+                                </div>
+                            </div>
+                            <div class="form-group agileits_w3layouts_form .w3_agile_main_grids">
+                                <label style="color: rgb(11, 87, 11);">Email-ID</label>
+                                <div class="wthree_input">
+                                    <i class="fa fa-envelope" aria-hidden="true"></i>
+                                    <input  type="text" name="email_id" id="email_id" formControlName='email_id' class="form-control" placeholder="Email Id" [(ngModel)]='userData.email'/>
+                                </div>
+                            </div>
+                            <div class="form-group agileits_w3layouts_form .w3_agile_main_grids">
+                                <label style="color: rgb(11, 87, 11);">Phone Number</label>
+                                <div class="wthree_input">
+                                    <input  type="text" name="phone" id="phone" formControlName='phone' class="form-control" placeholder="Phone Number" [(ngModel)]='userData.phone'/>
+                                </div>
+                            </div>
+                            <div class="form-group agileits_w3layouts_form .w3_agile_main_grids">
+                                <label style="color: rgb(11, 87, 11);">Qualification</label>
+                                <div class="wthree_input">
+                                    <select  type="text" name="qualification" id="qualification" formControlName='qualification' class="form-control" [(ngModel)]='userprofile.qualification'>
+                                        <option value selected>Add Qualification</option>
+                                        <option value="MTECH">M.TECH</option>
+                                        <option value="Phd">Phd</option>
+                                        <option value="M.ed">M.ed</option>
+                                        <option value="M.Sc">M.Sc</option>
+                                        <option value="MCA">M.CA</option>
+                                        <option value="M.COM">M.COM</option>
+                                        <option value="M.phil">M.phil</option>
+                                        <option value="Masters in">Masters in</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-group agileits_w3layouts_form ">
+                                <label style="color: rgb(11, 87, 11);">Organization</label>
+                                <div class="wthree_input">
+                                    <i class="fa fa-file-text" aria-hidden="true"></i>
+                                    <input  type="text" name="organisation" id="organisation"  formControlName='organisation' class="form-control" placeholder="Working Organization Name" [(ngModel)]='userprofile.organisation'/>
+                                </div>
+                            </div>
+                            <div class="form-group agileits_w3layouts_form .w3_agile_main_grids">
+                                <label style="color: rgb(11, 87, 11);">Stream/Subject/Department</label>
+                                <div class="wthree_input">
+                                    <i class="fa fa-file-text" aria-hidden="true"></i>
+                                    <select  type="text" name="stream" id="stream" formControlName='stream' class="form-control " [(ngModel)]='userprofile.stream'>
+                                        <option value selected>Select Stream/Subject/Department</option>
+                                        <option value="IT/CS">IT/CS</option>
+                                        <option value="Electronics">Electronics</option>
+                                        <option value="Civil">Civil</option>
+                                         <option value="Mechanical">Mechanical</option>
+                                        <option value="Maths">Maths</option>
+                                        <option value="Physics">Physics</option>
+                                        <option value="Chemistry">Chemistry</option>
+                                        <option value="Malayalam">Malayalam</option>
+                                        <option value="English">English</option>
+                                        <option value="Finance">Finance</option>
+                                        <option value="Commerce">Commerce</option>
+                                        <option value="Zoology">Zoology</option>
+                                        <option value="Biology">Biology</option>
+                                        <option value="Botony">Botony</option>
+                                        <option value="History">History</option>
+                                        <option value="Politics">Politics</option>
+                                        <option value="others">others</option>
+                                    </select>
+                                </div>
+                            </div>
+                            
+                            <div class="form-group agileits_w3layouts_form .w3_agile_main_grids" >
+                                <label style="color: rgb(11, 87, 11);">Job Role</label>
+                                <div class="wthree_input">
+                                    <i class="fa fa-file-text" aria-hidden="true"></i>
+                                    <input  type="text" name="jobrole" id="jobrole" formControlName='jobrole' class="form-control" placeholder="Job Role" [(ngModel)]='userData.role'/>
+                                </div>
+                            </div>
+                            <div class="form-group agileits_w3layouts_form .w3_agile_main_grids">
+                                <label style="color: rgb(11, 87, 11);">Previous Experience</label>
+                                <div class="wthree_input">
+                                    <i class="fa fa-file-text" aria-hidden="true"></i>
+                                    <input  type="text" name="prev_job" id="prev_job" formControlName='prev_job' class="form-control" placeholder="Previous Experiance if any" [(ngModel)]='userprofile.prev_job'/>
+                                </div>
+                                <div class="wthree_input">
+                                    <label style="color: rgb(11, 87, 11);">Years of Experience</label>
+                                    <i class="fa fa-file-text" aria-hidden="true"></i>
+                                    <input  type="text" name="exp" id="exp" formControlName='exp' class="form-control" placeholder="Years of Experiance" [(ngModel)]='userprofile.exp'/>
+                                </div>
+
+                            </div>
+                            <div class="form-group agileits_w3layouts_form .w3_agile_main_grids">
+                                <div class="wthree_input">
+                                    <i class="fa fa-file-text" aria-hidden="true"></i>
+                                    <input  type="checkbox" name="check" id="check" class="form-control-l"  formControlName='check'/> <label style="color: rgb(92, 139, 20);">Agree Terms and Conditions</label>
+                                </div>
+                            </div>
+                            
+                        </fieldset>
+                        
+                        <p *ngIf='editid'>
+                            <button type="submit"  class="btn btn-primary agileinfo_primary submit" style="background-color: rgb(116, 175, 27);" [disabled]="professorform.form.invalid" (click)="onEdit()">Edit Details</button>
+                        </p>
+                        <p *ngIf='!editid'>
+                            <button type="submit"  class="btn btn-primary agileinfo_primary submit" style="background-color: rgb(116, 175, 27);" [disabled]="professorform.form.invalid" (click)="onSubmit()">Register Now</button>
+                        </p>
+                    </form>
+                    
+      </article>
+      <!-- ################################################################################################ -->
+    </section>
+  </div>
+
+  <!-- <a class="imgover" href="#"><img src="images/demo/348x394.png" alt=""></a> -->
+

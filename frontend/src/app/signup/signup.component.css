@@ -1,0 +1,12 @@
+.ph{
+    height:10px;
+    position: relative;
+    border: 1px solid green;
+    border-radius:5px;
+}
+.IntlPhoneNumber
+{
+  height: 15px;
+  min-width: 800px;
+  position: absolute;
+}

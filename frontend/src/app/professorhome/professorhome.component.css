@@ -1,0 +1,23 @@
+
+.profilehome{
+    background-color:rgba(128, 224, 64, 0.87);font-weight:bolder;
+    border-radius:8px;
+    padding:5em;
+}
+.row{
+    border-radius: 5px;
+    padding: 2em;
+    background-color:rgba(28, 29, 27, 0.767);font-weight:bolder;
+}
+.btn{
+    background-color: rgb(107, 177, 60);
+    width: 60%;
+}
+/* .limiter{
+    border-radius: 5px;
+    padding: 2em;
+    position:relative;
+    top:10px;
+    background-color:rgba(28, 29, 27, 0.767);font-weight:bolder;
+    overflow-x:auto;
+} */

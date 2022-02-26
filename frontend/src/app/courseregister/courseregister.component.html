@@ -1,0 +1,75 @@
+
+
+  <div class="bgded overlay" style="background-image:url('../assets/images/homeprofile.jpg');">
+    <section class="hoc container clear"> 
+      <!-- ################################################################################################ -->
+      <div class="sectiontitle">
+    
+        <h1 style="color: white;font-weight: bolder;font-family:Arial, Helvetica, sans-serif;font-size: x-large;"
+        ><span style="color: rgb(241, 236, 237);">Add a Course</span></h1>
+      </div>
+      <article id="points" class="group">
+                    <form [formGroup]="courseForm" class="agile_form" #courseform='ngForm' >
+                        <fieldset>
+                            <div class="form-group agileits_w3layouts_form .w3_agile_main_grids">
+                                <label style="color: rgb(11, 87, 11);">Your Name</label>
+                                <div class="wthree_input">
+                                    <i class="fa fa-envelope" aria-hidden="true"></i>
+                                    <input  type="text" name="yourname" id="yourname" formControlName='yourname' class="form-control" [(ngModel)]='professor_data.Name'/>
+                                </div>
+                            </div>
+                            <div class="form-group agileits_w3layouts_form .w3_agile_main_grids">
+                                <label style="color: rgb(11, 87, 11);">Course Name</label>
+                                <div class="wthree_input">
+                                    <input  type="text" name="coursename" id="coursename" formControlName='coursename' class="form-control" placeholder="Enter name of the course"/>
+                                </div>
+                            </div>
+                            <div class="form-group agileits_w3layouts_form .w3_agile_main_grids">
+                                <label style="color: rgb(11, 87, 11);">Course Description</label>
+                                <div class="wthree_input">
+                                    <i class="fa fa-file-text" aria-hidden="true"></i>
+                                    <input type="textarea" name="coursedecs" id="coursedecs" formControlName='coursedecs' class="form-control" placeholder="Enter course description">
+                                </div>
+                            </div>
+                            <div class="form-group agileits_w3layouts_form ">
+                                <label style="color: rgb(11, 87, 11);">Course Duration</label>
+                                <div class="wthree_input">
+                                    <i class="fa fa-file-text" aria-hidden="true"></i>
+                                    <input  type="text" name="duration" id="duration"  formControlName='duration' class="form-control" placeholder="Enter course duration" />
+                                </div>
+                            </div>
+                            <div class="form-group agileits_w3layouts_form .w3_agile_main_grids">
+                                <label style="color: rgb(11, 87, 11);">Course Fee</label>
+                                <div class="wthree_input">
+                                    <i class="fa fa-file-text" aria-hidden="true"></i>
+                                    <input  type="text" name="fee" id="fee" formControlName='fee' class="form-control " placeholder="Enter fee">
+                                </div>
+                            </div>
+                            
+                            <div class="form-group agileits_w3layouts_form .w3_agile_main_grids" >
+                                <div class="wthree_input">
+                                   <label style="color: rgb(11, 87, 11);">Maximum Number of Seats you can allow is 40,Agree??</label>
+                                   <input  type="checkbox" name="checkseats" id="checkseats" class="form-control-l"  formControlName='checkseats'/>
+                                </div>
+                            </div>
+                            <div class="form-group agileits_w3layouts_form .w3_agile_main_grids">
+                                <div class="wthree_input">
+                                    <i class="fa fa-file-text" aria-hidden="true"></i>
+                                    <input  type="checkbox" name="check" id="check" class="form-control-l"  formControlName='check'/> <label style="color: rgb(92, 139, 20);">Agree Terms and Conditions</label>
+                                </div>
+                            </div>
+                            
+                        </fieldset>
+                        <p >
+                            <button type="submit"  class="btn btn-primary agileinfo_primary submit" style="background-color: rgb(116, 175, 27);" [disabled]="courseform.form.invalid" (click)="addcourse()">Add course</button>
+                        </p>
+                    </form>
+                    
+      </article>
+      <!-- ################################################################################################ -->
+    </section>
+  </div>
+
+  <!-- <a class="imgover" href="#"><img src="images/demo/348x394.png" alt=""></a> -->
+
+
